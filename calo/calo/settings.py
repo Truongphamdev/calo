@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from decouple import config
 from datetime import timedelta
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,9 +35,9 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # API keys
-CLARIFAI_API_KEY = "cdcfe759c4504d439b959a22b4dd0c2c"
-NUTRITIONIX_APP_ID = "accc8f49"
-NUTRITIONIX_APP_KEY = "e7a7f338e094d88795c7ba379cf5ca8e	"
+CLARIFAI_API_KEY = os.getenv("CLARIFAI_API_KEY")
+NUTRITIONIX_APP_ID = os.getenv("NUTRITIONIX_APP_ID")
+NUTRITIONIX_APP_KEY = os.getenv("NUTRITIONIX_APP_KEY")
 
 
 # Application definition
