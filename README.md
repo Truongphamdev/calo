@@ -50,7 +50,7 @@ python manage.py runserver
 Mọi đóng góp hoặc góp ý vui lòng gửi về truongnguyen01653@gmail.com
 
 ### 📝 Giấy phép
-Dự án được phát hành theo [MIT License](./LICENSE).
+Dự án được phát hành theo [MIT License](LICENSE).
 
 
 
